@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
-    private Adapter mAdapter;
 
     private ArrayList<Items> mItems = new ArrayList<>();
     private ArrayList<String> mPictures = new ArrayList<>();

@@ -30,7 +30,6 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
     private ArrayList<Items> mItems;
     private ArrayList<String> mImages;
     private Context mContext;
-    private RecyclerView mRecyclerView;
 
 
     public Adapter(Context context, ArrayList<Items> items, ArrayList<String> images) {
@@ -65,6 +64,4 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
     public int getItemCount() {
         return mItems.size();
     }
-
-
 }

@@ -5,10 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.smartdroidesign.projectapp_recyclerview2.Presenter.Adapter;
 import com.smartdroidesign.projectapp_recyclerview2.R;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
@@ -16,7 +13,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public CircleImageView image;
     public TextView lineOne;
     public TextView lineTwo;
-    public RelativeLayout parentLayout;
 
     public ViewHolder(@NonNull View itemView, final Adapter.OnItemClickListener listener) {
         super(itemView);
