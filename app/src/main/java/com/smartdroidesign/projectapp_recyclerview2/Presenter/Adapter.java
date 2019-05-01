@@ -1,4 +1,4 @@
-package com.smartdroidesign.projectapp_recyclerview2;
+package com.smartdroidesign.projectapp_recyclerview2.Presenter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,19 +9,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
+import com.smartdroidesign.projectapp_recyclerview2.Model.Items;
+import com.smartdroidesign.projectapp_recyclerview2.R;
 
 import java.util.ArrayList;
 
-public class Adapter extends RecyclerView.Adapter<ViewHolder>{
+public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     private static final String TAG = "Adapter";
     private OnItemClickListener mListener;
 
-    public interface OnItemClickListener{
+    public interface OnItemClickListener {
         void onItemClick(int position);
     }
 
-    public void setOnItemClickListener(OnItemClickListener listener){
+    public void setOnItemClickListener(OnItemClickListener listener) {
         mListener = listener;
     }
 
@@ -29,7 +31,6 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder>{
     private ArrayList<String> mImages;
     private Context mContext;
     private RecyclerView mRecyclerView;
-
 
 
     public Adapter(Context context, ArrayList<Items> items, ArrayList<String> images) {
@@ -64,7 +65,6 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder>{
     public int getItemCount() {
         return mItems.size();
     }
-
 
 
 }

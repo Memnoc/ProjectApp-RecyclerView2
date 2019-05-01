@@ -1,4 +1,4 @@
-package com.smartdroidesign.projectapp_recyclerview2;
+package com.smartdroidesign.projectapp_recyclerview2.View;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+
+import com.smartdroidesign.projectapp_recyclerview2.Presenter.Adapter;
+import com.smartdroidesign.projectapp_recyclerview2.Model.GalleryActivity;
+import com.smartdroidesign.projectapp_recyclerview2.Model.Items;
+import com.smartdroidesign.projectapp_recyclerview2.R;
 
 import java.util.ArrayList;
 
@@ -27,27 +32,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initImageBitmaps() {
-        Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
-        mItems.add(new Items("Rocky Mountain National Park", "Author's name"));
-        mPictures.add("https://i.redd.it/j6myfqglup501.jpg");
-        mItems.add(new Items("Mahahual", "Author's name"));
-        mPictures.add("https://i.redd.it/0h2gm1ix6p501.jpg");
-        mItems.add(new Items("Frozen Lake", "Author's name"));
-        mPictures.add("https://i.redd.it/glin0nwndo501.jpg");
-        mItems.add(new Items("White Sands Desert", "Author's name"));
-        mPictures.add("https://i.redd.it/j6myfqglup501.jpg");
-        mItems.add(new Items("Australia", "Author's name"));
-        mPictures.add("https://i.redd.it/j6myfqglup501.jpg");
-        mItems.add(new Items("Washington", "Author's name"));
-        mPictures.add("https://i.redd.it/obx4zydshg601.jpg");
-        mItems.add(new Items("Rocky Mountain National Park", "Author's name"));
-        mPictures.add("https://i.imgur.com/ZcLLrkY.jpg");
-        mItems.add(new Items("Rocky Mountain National Park", "Author's name"));
-        mPictures.add("https://i.redd.it/j6myfqglup501.jpg");
-        mItems.add(new Items("Rocky Mountain National Park", "Author's name"));
-        mPictures.add("https://i.redd.it/j6myfqglup501.jpg");
-        mItems.add(new Items("Rocky Mountain National Park", "Author's name"));
-        mPictures.add("https://i.redd.it/j6myfqglup501.jpg");
+        mItems.add(new Items("Sharingan First Stage", "All Uchiha"));
+        mPictures.add("https://i.imgur.com/8haNuo7.png");
+        mItems.add(new Items("Sharingan Second Stage", "All Uchiha"));
+        mPictures.add("https://i.imgur.com/aNlHk4r.png");
+        mItems.add(new Items("Sharingan Third Stage", "All Uchiha"));
+        mPictures.add("https://i.imgur.com/a1bdHXv.png");
+        mItems.add(new Items("Mangekyou Sharingan", "Madara Uchiha"));
+        mPictures.add("https://i.imgur.com/PG83oSc.png");
+        mItems.add(new Items("Eternal Mangekyou Sharingan", "Madara Uchiha"));
+        mPictures.add("https://i.imgur.com/TL8TDXE.png");
+        mItems.add(new Items("Mangekyou Sharingan", "Itachi Uchiha"));
+        mPictures.add("https://i.imgur.com/TBP8xzT.png");
+        mItems.add(new Items("Mangekyou Sharingan", "Sasuke Uchiha"));
+        mPictures.add("https://i.imgur.com/4ee0sEC.png");
+        mItems.add(new Items("Mangekyo Sharingan", "Obito Uchiha"));
+        mPictures.add("https://i.imgur.com/qFHHCBJ.png");
+        mItems.add(new Items("Mangekyou Sharingan", "Izuna Uchiha"));
+        mPictures.add("https://i.imgur.com/7jGnGnm.png");
 
         initRecyclerView();
     }

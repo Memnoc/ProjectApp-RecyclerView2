@@ -1,4 +1,4 @@
-package com.smartdroidesign.projectapp_recyclerview2;
+package com.smartdroidesign.projectapp_recyclerview2.Model;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.smartdroidesign.projectapp_recyclerview2.R;
 
 public class GalleryActivity extends AppCompatActivity {
 
@@ -19,8 +20,8 @@ public class GalleryActivity extends AppCompatActivity {
         getIncomingIntent();
     }
 
-    private void getIncomingIntent(){
-        if(getIntent().hasExtra("image_url") && getIntent().hasExtra("image_name")){
+    private void getIncomingIntent() {
+        if (getIntent().hasExtra("image_url") && getIntent().hasExtra("image_name")) {
             String imageUrl = getIntent().getStringExtra("image_url");
             String imageName = getIntent().getStringExtra("image_name");
 
@@ -29,7 +30,7 @@ public class GalleryActivity extends AppCompatActivity {
     }
 
 
-    private void setImage(String imageUrl, String imageName){
+    private void setImage(String imageUrl, String imageName) {
         TextView name = findViewById(R.id.image_description);
         name.setText(String.valueOf(imageName));
 

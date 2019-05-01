@@ -1,4 +1,4 @@
-package com.smartdroidesign.projectapp_recyclerview2;
+package com.smartdroidesign.projectapp_recyclerview2.Model;
 
 public class Items {
 
