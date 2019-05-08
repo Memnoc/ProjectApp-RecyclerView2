@@ -40,14 +40,13 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_list_item, parent, false);
-        ViewHolder holder = new ViewHolder(view, mListener);
-        return holder;
+        return new ViewHolder(view, mListener);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         final Items currentItem = mItems.get(position);
         Log.d(TAG, "onBindViewHolder: called.");
 

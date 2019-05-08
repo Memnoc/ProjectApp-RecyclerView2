@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.smartdroidesign.projectapp_recyclerview2.Presenter.Adapter;
-import com.smartdroidesign.projectapp_recyclerview2.Model.GalleryActivity;
 import com.smartdroidesign.projectapp_recyclerview2.Model.Items;
 import com.smartdroidesign.projectapp_recyclerview2.R;
 

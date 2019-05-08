@@ -1,9 +1,8 @@
-package com.smartdroidesign.projectapp_recyclerview2.Model;
+package com.smartdroidesign.projectapp_recyclerview2.View;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 

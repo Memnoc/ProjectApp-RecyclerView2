@@ -3,18 +3,19 @@ package com.smartdroidesign.projectapp_recyclerview2.Presenter;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 import com.smartdroidesign.projectapp_recyclerview2.R;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class ViewHolder extends RecyclerView.ViewHolder {
+class ViewHolder extends RecyclerView.ViewHolder {
 
-    public CircleImageView image;
-    public TextView lineOne;
-    public TextView lineTwo;
+    CircleImageView image;
+    TextView lineOne;
+    TextView lineTwo;
 
-    public ViewHolder(@NonNull View itemView, final Adapter.OnItemClickListener listener) {
+    ViewHolder(@NonNull View itemView, final Adapter.OnItemClickListener listener) {
         super(itemView);
         image = itemView.findViewById(R.id.image);
         lineOne = itemView.findViewById(R.id.image_name);
